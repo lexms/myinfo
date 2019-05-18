@@ -1,5 +1,10 @@
 package com.lexmanuel.myinfo.contact;
-
+/*
+ * Tanggal Pengerjaan    : 17/05/2019
+ * NIM                   : 10116370
+ * Nama                  : Alexander M S
+ * Kelas                 : IF - 8
+ * */
 import com.lexmanuel.myinfo.Model.Friend;
 import com.lexmanuel.myinfo.repo.Repository;
 

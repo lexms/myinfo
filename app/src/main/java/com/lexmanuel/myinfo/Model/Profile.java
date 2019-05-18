@@ -1,5 +1,10 @@
 package com.lexmanuel.myinfo.Model;
-
+/*
+ * Tanggal Pengerjaan    : 16/05/2019
+ * NIM                   : 10116370
+ * Nama                  : Alexander M S
+ * Kelas                 : IF - 8
+ * */
 public class Profile {
     String foto,nim,nama,kelas,deskripsi;
 

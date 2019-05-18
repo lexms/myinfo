@@ -1,5 +1,10 @@
 package com.lexmanuel.myinfo.profile;
-
+/*
+ * Tanggal Pengerjaan    : 17/05/2019
+ * NIM                   : 10116370
+ * Nama                  : Alexander M S
+ * Kelas                 : IF - 8
+ * */
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
