@@ -8,7 +8,7 @@ package com.lexmanuel.myinfo.friend_detail;
 import com.lexmanuel.myinfo.BasePresenter;
 import com.lexmanuel.myinfo.BaseView;
 
-public class FriendDetailContract {
+public interface FriendDetailContract {
 
     interface View extends BaseView<Presenter> {
 

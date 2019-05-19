@@ -11,7 +11,7 @@ import com.lexmanuel.myinfo.Model.Profile;
 
 import java.util.List;
 
-public class ProfileContract {
+public interface ProfileContract {
 
     interface View extends BaseView<Presenter>{
         void setLoadingIndicator(boolean active);
