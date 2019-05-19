@@ -6,42 +6,24 @@ package com.lexmanuel.myinfo.friend_list;
  * Kelas                 : IF - 8
  * */
 
-import androidx.annotation.NonNull;
-
-
 import com.lexmanuel.myinfo.Model.Friend;
-
+import com.lexmanuel.myinfo.repo.Repository.*;
 import java.util.ArrayList;
-
-import static androidx.core.util.Preconditions.checkNotNull;
 
 public class ListFriendsPresenter implements ListFriendsContract.Presenter{
 
-
-
     private boolean mFirstLoad = true;
 
- /*   public ListFriendsPresenter(@NonNull ListFriendsContract.View mListFriendsView){
-
-        mListFriendsView = checkNotNull(mListFriendsView, "taskDetailView cannot be null!");;
-
-        mListFriendsView.setPresenter(this);
-    }
-*/
-
-
-
-    private ArrayList<String> names =new ArrayList<>();
-
-    public void save(String name)
-    {
-        names.add(name);
-    }
-
-
+    public ArrayList<String> names =new ArrayList<>();
     public ArrayList<String> getNames()
     {
         return names;
+    }
+
+
+    public void save(String friend)
+    {
+        names.add(friend);
     }
 
 
