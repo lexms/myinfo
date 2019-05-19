@@ -16,7 +16,8 @@ public class Repository {
             "10116370",
             "Alexander M S",
             "IF - 8",
-            "ss "
+            "Do. Or do not. There is no try. Just like Master Yoda said in my life there shall not be any doubt, life have to be determent. Determent to persevere in good and righteousness." +
+                    "\n\n I'm an informatics student in UNIKOM and also part timer photographic designer in Barless Online Advertising."
     };
 
      static String[] contactData = new String[]{

@@ -1,6 +1,6 @@
 package com.lexmanuel.myinfo.main;
 /*
- * Tanggal Pengerjaan    : 17/05/2019
+ * Tanggal Pengerjaan    : 16/05/2019
  * NIM                   : 10116370
  * Nama                  : Alexander M S
  * Kelas                 : IF - 8
@@ -15,7 +15,7 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,IntroActivity.class);
         startActivity(intent);
         finish();
     }

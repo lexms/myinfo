@@ -1,4 +1,4 @@
-package com.lexmanuel.myinfo.list_friends;
+package com.lexmanuel.myinfo.friend_list;
 
 import com.lexmanuel.myinfo.Model.Friend;
 

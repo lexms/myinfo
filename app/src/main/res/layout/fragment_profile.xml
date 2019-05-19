@@ -7,6 +7,38 @@
     tools:context="com.lexmanuel.myinfo.profile.ProfileFragment">
 
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="204dp"
+        android:background="@drawable/gradientbackground"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/myphoto" />
+
+
+        <TextView
+            android:id="@+id/tvprofile_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Alexander M S"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
     <ProgressBar
         android:id="@+id/pb_profile"
         android:layout_width="40dp"
@@ -18,97 +50,65 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/myphoto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tvprofile_deskripsi"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/horizontal_margin"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="@dimen/horizontal_margin"
-        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/deskripsi"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvprofile_kelas" />
 
     <TextView
         android:id="@+id/profile_label_nim"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_margin"
-        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/nim"
         android:textAllCaps="true"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvprofile_deskripsi" />
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/tvprofile_nim"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginStart="32dp"
         android:text="@string/nim"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_label_nim" />
 
-    <TextView
-        android:id="@+id/profile_label_nama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_margin"
-        android:gravity="center"
-        android:text="@string/nama"
-        android:textAllCaps="true"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvprofile_nim"
-        tools:layout_editor_absoluteX="0dp" />
 
-    <TextView
-        android:id="@+id/tvprofile_nama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/nama"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_label_nama" />
 
     <TextView
         android:id="@+id/profile_label_kelas"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_margin"
-        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/kelas"
         android:textAllCaps="true"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvprofile_nama"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvprofile_nim" />
 
     <TextView
         android:id="@+id/tvprofile_kelas"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/kelas"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_label_kelas" />
 

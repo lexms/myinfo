@@ -14,7 +14,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.lexmanuel.myinfo.contact.ContactFragment;
-import com.lexmanuel.myinfo.list_friends.ListFriendsFragment;
+import com.lexmanuel.myinfo.friend_list.ListFriendsFragment;
 import com.lexmanuel.myinfo.profile.ProfileFragment;
 import com.lexmanuel.myinfo.R;
 
